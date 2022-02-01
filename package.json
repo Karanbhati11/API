@@ -4,10 +4,9 @@
   "description": "",
   "main": "backend.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=development & netlify-lambda serve src",
-    "build": "set NODE_ENV=production & netlify-lambda serve src",
-    "dev": "nodemon app.js"
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
